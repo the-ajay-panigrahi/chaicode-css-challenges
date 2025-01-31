@@ -1,0 +1,170 @@
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --gray-800: #1f2937;
+  --neutral-400: #9ca3af;
+  --neutral-900: #111827;
+
+  /* Dark mode variables */
+  --bg-dark: #111827;
+  --text-dark: #ffffff;
+  --border-dark: #374151;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  background-color: #2663ec;
+  padding: 15px 25px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #1a4097;
+}
+
+.hero {
+  max-width: 1200px;
+  margin-inline: 30px;
+}
+
+.hero-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 25px;
+}
+
+.content-col h1 {
+  font-size: 72px;
+}
+
+.content-col p {
+  font-size: 25px;
+}
+
+.cta-group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="text"] {
+  padding: 13px 15px;
+  width: 300px;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  color: #000000;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(128, 128, 128, 0.723);
+}
+
+.demo-button {
+  padding: 15px 25px;
+  background-color: #3b83f6;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.demo-button:hover {
+  background-color: #2a5cac;
+}
+
+.trusted-by {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.brands-section {
+  margin-top: 30px;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+}
+
+.brand-logo {
+  width: 105px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.image-col {
+  overflow: hidden;
+}
+
+.hero-image {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 650px) {
+  .cta-group {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .demo-button {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-grid {
+    flex-direction: column;
+    align-items: start;
+  }
+}
